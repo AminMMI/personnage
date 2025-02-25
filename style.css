@@ -1,0 +1,191 @@
+*, *::after*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #1B1D2B 20%, #0D0D0D 80%);
+    background-size: cover;
+    color: #C9A227; /* Texte en or vieilli */
+    font-family: 'Press Start 2P', cursive; /* Style pixel-retro */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Effet relief pour lisibilité */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.transparenttextures.com/patterns/noise-pattern.png'); /* Texture bruit */
+    opacity: 0.1; /* Légère transparence */
+    pointer-events: none;
+}
+
+header {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    color: #ffffff; /* Texte en or vieilli */
+    font-family: 'Press Start 2P', cursive; /* Style pixel-retro */
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 2px white;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border: none;   /* Enlève la bordure */
+    outline: none;  /* Enlève le contour de focus */
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: solid 2px white;
+}
+
+input[type=submit] {
+    color: #C9A227; /* Texte en or vieilli */
+    padding: 10px 7px;
+    border: solid 2px white;
+    webkit-box-shadow: 10px 10px 0px -1px rgba(255,255,255,1);
+-moz-box-shadow: 10px 10px 0px -1px rgba(255,255,255,1);
+box-shadow: 10px 10px 0px -1px rgba(255,255,255,1);
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+}
+
+main table {
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+}
+
+table th, table td { 
+    padding: 5px 7px;
+    text-align: center;
+}
+
+table form {
+    margin: 0;
+    padding: 15px;
+}
+
+table button {
+    background-color: rgba(13, 13, 13, 0);
+    color: #C9A227; /* Texte en or vieilli */
+    font-family: 'Press Start 2P', cursive; /* Style pixel-retro */
+    font-size: 2rem;
+    margin: auto;
+}
+
+.logs {
+    width: 80%;
+    height: 200px;
+    line-height: 1.5;
+    border: solid 2px white;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.fight form { 
+    width: 80%;
+}
+
+.fight form label {
+    font-family: 'Press Start 2P', cursive; /* Style pixel-retro */
+    color: #FFD700; /* Or, pour l'aspect précieux et noble */
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+select {
+    background-color: #2f2b1e; /* Un fond sombre, style médiéval */
+    color: #FFD700; /* Texte en or pour rappeler l'ambiance */
+    border: 2px solid #6e4b3b; /* Bordure en brun foncé */
+    border-radius: 5px; /* Coins arrondis pour un aspect plus fluide */
+    padding: 0.5rem 1rem; /* Un peu d'espace pour le texte */
+    font-family: 'Press Start 2P', cursive; /* Style pixel-retro */
+    font-size: 1rem;
+    outline: none; /* Pas de contour au focus */
+    transition: all 0.3s ease; /* Transition fluide pour les changements */
+}
+
+select:focus {
+    border-color: #FFD700; /* Bordure dorée quand l'élément est sélectionné */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Légère lueur dorée */
+}
+
+select option {
+    background-color: #3b2a20; /* Fond sombre pour les options */
+    color: #FFD700; /* Texte doré pour un meilleur contraste */
+}
+
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #6e4b3b;
+}
+
+.choix {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.choix label {
+    margin: 0;
+}
+
+.choix select {
+    width: 70%;
+    max-width: 175px;
+    text-align: center;
+    margin: 10px 0px 50px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+nav a {
+    color: #FFD700;
+}
